@@ -1,0 +1,2 @@
+bitmerchant>=0.1.8
+keylib>=0.1.0

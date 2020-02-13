@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+cryptonator.py
+requirements.txt
+setup.cfg
+setup.py
+test_cryptonator.py
+cryptonator.egg-info/PKG-INFO
+cryptonator.egg-info/SOURCES.txt
+cryptonator.egg-info/dependency_links.txt
+cryptonator.egg-info/not-zip-safe
+cryptonator.egg-info/requires.txt
+cryptonator.egg-info/top_level.txt

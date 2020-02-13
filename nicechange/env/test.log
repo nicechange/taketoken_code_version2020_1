@@ -1,0 +1,729 @@
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed
+INFO:btfxwss.connection:Connection closed
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 48, in update
+    BurseCourse(burse='Bitfinex', course=coursebtc, token='BTC')
+NameError: name 'course' is not defined
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 49, in update
+    object.save()
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\base.py", line 807, in save
+    force_update=force_update, update_fields=update_fields)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\base.py", line 837, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\base.py", line 923, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\base.py", line 962, in _do_insert
+    using=using, raw=raw)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\query.py", line 1076, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\sql\compiler.py", line 1106, in execute_sql
+    for sql, params in self.as_sql():
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\sql\compiler.py", line 1059, in as_sql
+    for obj in self.query.objs
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\sql\compiler.py", line 1059, in <listcomp>
+    for obj in self.query.objs
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\sql\compiler.py", line 1058, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\sql\compiler.py", line 998, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\fields\__init__.py", line 770, in get_db_prep_save
+    prepared=False)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\fields\__init__.py", line 762, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\fields\__init__.py", line 1781, in get_prep_value
+    return float(value)
+TypeError: float() argument must be a string or a number, not 'list'
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 49, in update
+    object.save()
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\base.py", line 807, in save
+    force_update=force_update, update_fields=update_fields)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\base.py", line 837, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\base.py", line 923, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\base.py", line 962, in _do_insert
+    using=using, raw=raw)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\query.py", line 1076, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\sql\compiler.py", line 1106, in execute_sql
+    for sql, params in self.as_sql():
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\sql\compiler.py", line 1059, in as_sql
+    for obj in self.query.objs
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\sql\compiler.py", line 1059, in <listcomp>
+    for obj in self.query.objs
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\sql\compiler.py", line 1058, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\sql\compiler.py", line 998, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\fields\__init__.py", line 770, in get_db_prep_save
+    prepared=False)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\fields\__init__.py", line 762, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\fields\__init__.py", line 1781, in get_prep_value
+    return float(value)
+TypeError: float() argument must be a string or a number, not 'list'
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+psycopg2.IntegrityError: ОШИБКА:  нулевое значение в столбце "type" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (1, Bitfinex, BTC, null, 8227.1).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 49, in update
+    object.save()
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\base.py", line 807, in save
+    force_update=force_update, update_fields=update_fields)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\base.py", line 837, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\base.py", line 923, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\base.py", line 962, in _do_insert
+    using=using, raw=raw)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\query.py", line 1076, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\sql\compiler.py", line 1107, in execute_sql
+    cursor.execute(sql, params)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\backends\utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  нулевое значение в столбце "type" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (1, Bitfinex, BTC, null, 8227.1).
+
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 58, in update
+    object = BurseCourse.objects.get(burse='Bitfinex', token='ETH')
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+offers.models.DoesNotExist: BurseCourse matching query does not exist.
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.connection:Connection closed
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 56, in update
+    object = BurseCourse(burse='Bitfinex', course=coursebtc[0][0], token='BTC')
+TypeError: 'int' object is not subscriptable
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 52, in update
+    object = BurseCourse.objects.get(burse='Bitfinex', token='BTC')
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+offers.models.DoesNotExist: BurseCourse matching query does not exist.
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.connection:Connection closed
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 52, in update
+    object = BurseCourse.objects.get(burse='Bitfinex', token='BTC')
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+offers.models.DoesNotExist: BurseCourse matching query does not exist.
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.connection:Connection closed
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 52, in update
+    object = BurseCourse.objects.get(burse='Bitfinex', token='BTC')
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+offers.models.DoesNotExist: BurseCourse matching query does not exist.
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.connection:Connection closed
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 52, in update
+    object = BurseCourse.objects.get(burse='Bitfinex', token='BTC')
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+offers.models.DoesNotExist: BurseCourse matching query does not exist.
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.connection:Connection closed
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 36, in update
+    ticker_q = wss.tickers('BTCUSD')  # returns a Queue object for the pair.
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\btfxwss\client.py", line 358, in tickers
+    raise KeyError(pair)
+KeyError: 'BTCUSD'
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 35, in update
+    ticker_q = wss.tickers('BTCUSD')  # returns a Queue object for the pair.
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\btfxwss\client.py", line 358, in tickers
+    raise KeyError(pair)
+KeyError: 'BTCUSD'
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 35, in update
+    ticker_q = wss.tickers('BTCUSD')  # returns a Queue object for the pair.
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\btfxwss\client.py", line 358, in tickers
+    raise KeyError(pair)
+KeyError: 'BTCUSD'
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'LTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'LTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'LTCUSD')
+INFO:btfxwss.connection:Connection closed
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'LTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'LTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'LTCUSD')
+INFO:btfxwss.connection:Connection closed
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 23, in update
+    cur = btt.get_currencies()
+TypeError: get_currencies() missing 1 required positional argument: 'self'
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 23, in update
+    cur = btt.get_currencies(btt)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\bittrex\bittrex.py", line 213, in get_currencies
+    }, protection=PROTECTION_PUB)
+TypeError: _api_query() missing 1 required positional argument: 'self'
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 23, in update
+    cur = btt.get_currencies(self=btt)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\bittrex\bittrex.py", line 213, in get_currencies
+    }, protection=PROTECTION_PUB)
+TypeError: _api_query() missing 1 required positional argument: 'self'
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 23, in update
+    cur = btt.get_currencies(Bittrex)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\bittrex\bittrex.py", line 213, in get_currencies
+    }, protection=PROTECTION_PUB)
+TypeError: _api_query() missing 1 required positional argument: 'self'
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'LTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'LTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.connection:Connection closed
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 80, in update
+    api = bittrex('key', 'secret')
+TypeError: 'module' object is not callable
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'LTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'LTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'LTCUSD')
+INFO:btfxwss.connection:Connection closed
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 80, in update
+    api = bittrex('key', 'secret')
+TypeError: 'module' object is not callable
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'LTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'LTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed
+ERROR:django.request:Internal Server Error: /updcourses/
+Traceback (most recent call last):
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\shagin\djangopr\nicechange\env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\shagin\djangopr\nicechange\offers\views.py", line 395, in update_courses
+    update()
+  File "F:\shagin\djangopr\nicechange\offers\burses.py", line 92, in update
+    dogesummary = api.getmarketsummary(market)
+AttributeError: 'Bittrex' object has no attribute 'getmarketsummary'
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'LTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'LTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'LTCUSD')
+INFO:btfxwss.connection:Connection closed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.cryptonator.com
+DEBUG:urllib3.connectionpool:https://api.cryptonator.com:443 "GET /api/ticker/usd-btc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.cryptonator.com:443 "GET /api/ticker/usd-eth HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.cryptonator.com:443 "GET /api/ticker/usd-ltc HTTP/1.1" 200 None
+WARNING:django.request:Not Found: /favicon.ico
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'LTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'LTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.connection:Connection closed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.cryptonator.com
+DEBUG:urllib3.connectionpool:https://api.cryptonator.com:443 "GET /api/ticker/usd-btc HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.cryptonator.com:443 "GET /api/ticker/usd-eth HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.cryptonator.com:443 "GET /api/ticker/usd-ltc HTTP/1.1" 200 None
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'LTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'LTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'LTCUSD')
+INFO:btfxwss.connection:Connection closed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cryptocompare.com
+DEBUG:urllib3.connectionpool:https://www.cryptocompare.com:443 "GET /api/data/coinsnapshot?fsym=LTC&tsym=EUR HTTP/1.1" 200 None
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'LTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'LTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'LTCUSD')
+INFO:btfxwss.connection:Connection closed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cryptocompare.com
+DEBUG:urllib3.connectionpool:https://www.cryptocompare.com:443 "GET /api/data/coinsnapshot?fsym=BTC&tsym=EUR HTTP/1.1" 200 None
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'LTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'LTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cryptocompare.com
+DEBUG:urllib3.connectionpool:https://www.cryptocompare.com:443 "GET /api/data/coinsnapshot?fsym=BTC&tsym=EUR HTTP/1.1" 200 None
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'LTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'LTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.connection:Connection closed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cryptocompare.com
+DEBUG:urllib3.connectionpool:https://www.cryptocompare.com:443 "GET /api/data/coinsnapshot?fsym=BTC&tsym=EUR HTTP/1.1" 200 None
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'ETHUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'LTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'LTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'LTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'ETHUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.cryptocompare.com
+DEBUG:urllib3.connectionpool:https://www.cryptocompare.com:443 "GET /api/data/coinsnapshot?fsym=BTC&tsym=USD HTTP/1.1" 200 None

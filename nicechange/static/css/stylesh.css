@@ -1,0 +1,61 @@
+body {
+    background: url(http://www.taketoken.net/static/img/bg.jpg) no-repeat center center;
+    background-attachment: fixed;
+	background-size: cover;
+}
+.center {
+	width:80%;
+	padding:50px;
+	margin: auto;
+    margin-top: 10%;
+	background: #ffffff;
+	height:auto;
+	border-radius: 10px;
+	box-shadow: 0 0 30px rgba(0,0,0,0.2);
+}
+.logo {
+	text-align: center;
+}
+.header {
+	font-family: SANS-SERIF;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2b9ad6;
+    text-transform: uppercase;
+	text-align: center;
+}
+.line{
+	width: 50%;
+    height: 0px;
+    size: 1px;
+    border: 1px solid #eee8ce;
+}
+.bodytext {
+	font-family: SANS-SERIF;
+    font-size: 16px;
+    color: #000;
+	text-align: center;
+	line-height:1.5;
+}
+.button {
+    background: #2b9ad6;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 55px;
+    line-height: 56px;
+    padding: 0 35px;
+    text-transform: uppercase;
+    margin: 5px;
+	text-decoration: none;
+	font-family: SANS-SERIF;
+	text-align: center;
+}
+.button:hover {
+    background: #ef7f1a;
+    color: #fff;
+}
+a {
+	color:#2b9ad6;
+}

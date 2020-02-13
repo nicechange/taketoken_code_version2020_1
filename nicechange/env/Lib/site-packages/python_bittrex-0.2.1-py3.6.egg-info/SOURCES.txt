@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+bittrex/__init__.py
+bittrex/bittrex.py
+python_bittrex.egg-info/PKG-INFO
+python_bittrex.egg-info/SOURCES.txt
+python_bittrex.egg-info/dependency_links.txt
+python_bittrex.egg-info/requires.txt
+python_bittrex.egg-info/top_level.txt

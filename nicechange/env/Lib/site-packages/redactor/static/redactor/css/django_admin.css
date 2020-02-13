@@ -1,0 +1,11 @@
+form .aligned .redactor-editor p { margin-left: 0; padding-left: 0; }
+form .aligned .redactor-editor ul { margin-left: inherit; padding-left: inherit; }
+form .form-row .redactor-box p,
+form .form-row .redactor-box li,
+form .form-row .redactor-box dt,
+form .form-row .redactor-box dd { font-size: inherit; line-height: inherit; }
+.redactor-box {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}

@@ -1,0 +1,26 @@
+<form action="/order/" method="post" oninput="hiding()">
+    <script type="text/javascript" src="/static/js/jquery-latest.js"></script>
+    <script>
+    function hiding() {
+        if (document.getElementById('id_sellorbuy').value == 'ПРОДАЖА'){
+                    document.getElementById('id_fiat').style.visibility = "hidden";
+                    document.getElementById('id_quantity').style.visibility = "visible";
+                    document.getElementById('id_fiat').previousElementSibling.style.visibility = "hidden";
+                    document.getElementById('id_quantity').previousElementSibling.style.visibility = "visible";
+        }
+        else {
+                                document.getElementById('id_fiat').style.visibility = "visible";
+                    document.getElementById('id_quantity').style.visibility = "hidden";
+                    document.getElementById('id_fiat').previousElementSibling.style.visibility = "visible";
+                    document.getElementById('id_quantity').previousElementSibling.style.visibility = "hidden";
+        }
+        }
+
+</script>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit" />
+</form>
+<script>
+    hiding()
+</script>

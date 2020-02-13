@@ -1,0 +1,79 @@
+{% load render_table from django_tables2 %}
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="/static/js/jquery-latest.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.tablesorter.js"></script>
+    <link rel="stylesheet" href="http://www.atlasestateagents.co.uk/css/tether.min.css">
+    <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="/static/js/script.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<br>
+<h3>Сделка (Покупатель)</h3>
+</br>
+<link rel="stylesheet" href="{% static 'django_tables2/themes/paleblue/css/screen.css' %}" />
+<form action="/deal/{{ id }}/" method="post">
+    {% csrf_token %}
+    <script>
+        $(document).ready(function() {
+            prepare()
+
+});
+
+    function prepare() {
+        ws = new WebSocket('ws://' + window.location.host + ':8889' + '/{{ id }}' + "/");
+        cs = new WebSocket('ws://' + window.location.host + ':8888' + '/{{ id }}' + "/");
+        ws.onclose = function(){
+            // Try to reconnect in 5 seconds
+          alert("Закрыто!");
+        };
+        ws.onmessage = function(e){
+            // Try to reconnect in 5 seconds
+          if (e.data.toString() == 'wait')
+          {
+             alert("Продавец ожидает фиат. Переведите деньги по оговоренному реквизиту.");
+          }
+          if (e.data.toString() == 'given')
+          {
+             alert("Продавец получил фиат. Ожидайте крипту.");
+             cs.send('Продавец ожидает фиат. Переведите деньги по оговоренному реквизиту.')
+          }
+          if (e.data.toString() == 'crsent')
+          {
+             alert("Продавец отправил крипту.");
+             ws.send('crgiven');
+            cs.send('Крипта получена.');
+             alert("Крипта ваша! Поздравляем! Сделка проведена успешно!");
+             location.reload();
+          }
+        };
+        }
+     function onsent() {
+         ws.send('sent');
+         cs.send('Фиат отправлен.');
+        }
+
+
+
+</script>
+    {{ form.as_p }}
+    Выбранный кошелек для поступлений: {{ wallet }}
+    <input id='sent' name='sent' type="submit" value="Фиат отправлен" onclick="onsent()"/>
+    <input id='cancel' name='cancel' type="submit" value="Отмена" />
+</form>
+
+
+          <table class="table">
+              {% render_table wallets %}
+          </table>
+
+
+      </div>
+  </div>
+<br/><a href="/nicechange/">Главная</a>
+</body>
+</html>

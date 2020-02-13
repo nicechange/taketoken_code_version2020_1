@@ -1,0 +1,45 @@
+<form action="/reply/{{ id }}/" method="post"  oninput="calculate()" >
+    <script type="text/javascript" src="/static/js/jquery-latest.js"></script>
+      <script>
+
+
+
+$(document).ready(function() {
+        ws = new WebSocket('ws://' + window.location.host + ':8889' + '/' + '{{ broker.id }}' + "/");
+        ws.onclose = function(){
+            // Try to reconnect in 5 seconds
+            alert("Закрыто!");
+        };
+});
+
+
+    function calculate() {
+                    document.getElementById('id_quantity').value =
+document.getElementById('id_course').value*{{quantity}}
+
+        }
+</script>
+    {% csrf_token %}
+    Пользователь: {{ broker }}
+    </br/>
+    Сделок: {{ deals }}
+    </br/>
+    Отзывов: {{ reviews }}
+    </br/>
+    Объект торговли:{{ offer_type }}
+    </br/>
+    Количество:{{ quantity }}
+    </br/>
+        Операция:{{ buysale }}
+    </br/>
+        Банк: {{ bank }}
+    </br/>
+    </br/>
+    Ваш курс:
+    <input type="number" name="course" value={{ course }} step="course" required="" id="id_course"></br/>
+    {{ form.as_p }}
+    <input type="submit" value="Submit" onclick="ws.send('item'); alert('Ваш ответ принят. В случае развития сделки вы будете приглашены в чат.')"/>
+</form>
+<script>
+    calculate()
+</script>

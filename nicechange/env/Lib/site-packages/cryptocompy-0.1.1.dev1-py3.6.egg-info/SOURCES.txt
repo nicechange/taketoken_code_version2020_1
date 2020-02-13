@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+cryptocompy/__init__.py
+cryptocompy/coin.py
+cryptocompy/helper_functions.py
+cryptocompy/mining.py
+cryptocompy/price.py
+cryptocompy/rest.py
+cryptocompy/top.py
+cryptocompy.egg-info/PKG-INFO
+cryptocompy.egg-info/SOURCES.txt
+cryptocompy.egg-info/dependency_links.txt
+cryptocompy.egg-info/top_level.txt

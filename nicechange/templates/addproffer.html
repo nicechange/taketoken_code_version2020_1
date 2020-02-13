@@ -1,0 +1,35 @@
+<form action="/proffer/" method="post" >
+          <script>
+              function calculate() {
+                  if (document.getElementById('id_type_of_token').value == 'BTC') {
+                      if (document.getElementById('id_type').value == 'КУПЛЮ') {
+                          document.getElementById('id_rate').value = {{ course_btc_buy }};
+                      }else {
+                          document.getElementById('id_rate').value = {{ course_btc_sale }};
+                      }
+                  }
+                  if (document.getElementById('id_type_of_token').value == 'ETH') {
+
+                      if (document.getElementById('id_type').value == 'КУПЛЮ') {
+                          document.getElementById('id_rate').value = {{ course_eth_buy }};
+                      }else {
+                          document.getElementById('id_rate').value = {{ course_eth_sale }};
+                      }
+                  }
+                  if (document.getElementById('id_type_of_token').value == 'LTC') {
+                      if (document.getElementById('id_type').value == 'КУПЛЮ') {
+                          document.getElementById('id_rate').value = {{ course_ltc_buy }};
+                      }else {
+                          document.getElementById('id_rate').value = {{ course_ltc_sale }};
+                      }
+                  }
+
+              }
+</script>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit" />
+</form>
+<script>
+    calculate()
+</script>

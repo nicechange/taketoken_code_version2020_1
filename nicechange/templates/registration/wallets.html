@@ -1,0 +1,41 @@
+{% load render_table from django_tables2 %}
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://www.atlasestateagents.co.uk/css/tether.min.css">
+<script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+  <link href="../static/css/reset.css" rel="stylesheet" media="screen">
+  <link href="../static/css/style.min.css" rel="stylesheet" media="screen">
+  <link href="../static/img/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+<script type="text/javascript" src="../static/js/jquery-latest.js"></script>
+<script type="text/javascript" src="../static/js/jquery.tablesorter.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<br>
+<h3>Мои кошельки</h3>
+</br>
+<link rel="stylesheet" href="{% static 'django_tables2/themes/paleblue/css/screen.css' %}" />
+<form action="/wallets/" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Создать новый" />
+</form>
+
+
+          <table class="table">
+              {% render_table wallets %}
+          </table>
+
+
+      </div>
+  </div>
+<br/><a href="/nicechange/">Главная</a>
+ <script src="../static/js/script.min.js"></script>
+</body>
+</html>

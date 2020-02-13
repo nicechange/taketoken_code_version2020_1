@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: keychain
+Version: 0.14.2.0
+Summary: Library for BIP32 hierarchical deterministic keychains / wallets.
+Home-page: https://github.com/blockstack/keychain-manager-py
+Author: Blockstack Developers
+Author-email: support@blockstack.com
+License: MIT
+Description: UNKNOWN
+Keywords: bitcoin blockchain bip32 HD hierarchical deterministic keychain wallet
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

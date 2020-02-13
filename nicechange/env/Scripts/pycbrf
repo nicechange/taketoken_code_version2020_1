@@ -1,0 +1,7 @@
+#!F:\shagin\djangopr\nicechange\env\Scripts\python.exe
+from pycbrf.cli import main
+
+
+if __name__ == '__main__':
+    main()
+

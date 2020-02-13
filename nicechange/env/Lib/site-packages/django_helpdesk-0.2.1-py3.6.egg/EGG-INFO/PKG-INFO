@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: django-helpdesk
+Version: 0.2.1
+Summary: Django-powered ticket tracker for your helpdesk
+Home-page: https://github.com/django-helpdesk/django-helpdesk
+Author: Garret Wassermann
+Author-email: gwasser@gmail.com
+License: BSD
+Description: 
+        ===============
+        django-helpdesk
+        ===============
+        
+        This is a Django-powered helpdesk ticket tracker, designed to
+        plug into an existing Django website and provide you with
+        internal (or, perhaps, external) helpdesk management.
+        
+Keywords: django,helpdesk,django-helpdesk,tickets,incidents,cases,bugs,track,support
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Customer Service
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Software Development :: Bug Tracking
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Office/Business
+Classifier: Natural Language :: English

@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: commontools
+Version: 0.1.0
+Summary: Common functions that are often needed but don't really belong anywhere
+Home-page: https://github.com/muneeb-ali/commontools
+Author: Muneeb Ali (@muneeb)
+Author-email: muneeb@dritte.org
+License: MIT
+Description: UNKNOWN
+Keywords: python,common,log,json
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python

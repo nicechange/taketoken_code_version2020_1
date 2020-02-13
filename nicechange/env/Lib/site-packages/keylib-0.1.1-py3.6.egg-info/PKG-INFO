@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: keylib
+Version: 0.1.1
+Summary: Library for creating and working with private keys, public keys, and bitcoin addresses.
+Home-page: https://github.com/blockstack/keylib-py
+Author: Blockstack Developers
+Author-email: hello@onename.com
+License: MIT
+Description: UNKNOWN
+Keywords: public private key elliptic curve ecdsa secp256k1 cryptography bitcoin
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

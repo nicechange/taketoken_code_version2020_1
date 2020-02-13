@@ -1,0 +1,124 @@
+{% load render_table from django_tables2 %}
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://www.atlasestateagents.co.uk/css/tether.min.css">
+<script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+  <link href="../static/css/reset.css" rel="stylesheet" media="screen">
+  <link href="../static/css/style.min.css" rel="stylesheet" media="screen">
+  <link href="../static/img/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+<script type="text/javascript" src="../static/js/jquery-latest.js"></script>
+<script type="text/javascript" src="../static/js/jquery.tablesorter.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<body>
+<h3>Welcome! Register to add and view orders and offers!</h3>
+<link rel="stylesheet" href="{% static 'django_tables2/themes/paleblue/css/screen.css' %}" />
+  <div class="container">
+    <div class="tabs">
+      <!-- Tab panes -->
+        <div class="tabs" data-options="deep_linking:true;">
+      <ul class="tabs__nav nav nav-tabs" id="myTab" role="tablist">
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1').hidden = false; document.getElementById('tab2').hidden = true;
+        document.getElementById('tab3').hidden = true;document.getElementById('tab4').hidden = true;document.getElementById('tab5').hidden = true;
+document.getElementById('tab6').hidden = true;">
+          <a class="tabs__link nav-link active" data-toggle="tab" href="#tab1" role="tab" aria-expanded="true">BTC</a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1').hidden = true; document.getElementById('tab2').hidden = false;
+        document.getElementById('tab3').hidden = true;document.getElementById('tab4').hidden = true;document.getElementById('tab5').hidden = true;
+document.getElementById('tab6').hidden = true;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab2" role="tab">ETH</a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1').hidden = true; document.getElementById('tab2').hidden = true;
+        document.getElementById('tab3').hidden = false;document.getElementById('tab4').hidden = true;document.getElementById('tab5').hidden = true;
+document.getElementById('tab6').hidden = true;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab3" role="tab">LTC</a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1').hidden = true; document.getElementById('tab2').hidden = true;
+        document.getElementById('tab3').hidden = true;document.getElementById('tab4').hidden = false;document.getElementById('tab5').hidden = true;
+document.getElementById('tab6').hidden = true;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab4" role="tab">XMR</a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1').hidden = true; document.getElementById('tab2').hidden = true;
+        document.getElementById('tab3').hidden = true;document.getElementById('tab4').hidden = true;document.getElementById('tab5').hidden = false;
+document.getElementById('tab6').hidden = true;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab5" role="tab">DASH</a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1').hidden = true; document.getElementById('tab2').hidden = true;
+        document.getElementById('tab3').hidden = true;document.getElementById('tab4').hidden = true;document.getElementById('tab5').hidden = true;
+document.getElementById('tab6').hidden = false;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab6" role="tab">ZEC</a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tabs__content tab-content" id="nav-tabContent">
+        <div class="tabs__pane tab-pane fade show active" id="tab1" role="tabpanel" >
+          <table class="table">
+              {% render_table orders_btc %}
+          </table>
+
+        </div>
+        <div class="tabs__pane tab-pane fade" id="tab2" role="tabpanel">
+          <table class="table">
+           {% render_table orders_eth %}
+          </table>
+
+        </div>
+        <div class="tabs__pane tab-pane fade" id="tab3" role="tabpanel">
+          <table class="table">
+            {% render_table orders_ltc %}
+          </table>
+
+        </div>
+          <div class="tabs__pane tab-pane fade" id="tab4" role="tabpanel">
+          <table class="table">
+            {% render_table orders_xmr %}
+          </table>
+
+        </div>
+          <div class="tabs__pane tab-pane fade" id="tab5" role="tabpanel">
+          <table class="table">
+            {% render_table orders_dash %}
+          </table>
+
+        </div>
+          <div class="tabs__pane tab-pane fade" id="tab6" role="tabpanel">
+          <table class="table">
+            {% render_table orders_zec %}
+          </table>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+<br/><a href="/order/">Создать ордер</a>
+<br/><a href="/proffer/">Создать предложение (Брокер)</a>
+<br/><a href="/my/">Мои ордера</a>
+<br/><a href="/mybrok/">Мои ордера и предложения (Брокер)</a>
+<br/><a href="/login/">Войти</a>
+<br/><a href="/register/">Зарегистрироваться</a>
+ <script src="../static/js/script.min.js"></script>
+<script type='text/javascript'>
+(function(){ var widget_id = 'lRLplrjsH0';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+s.src = '//code.jivosite.com/script/widget/'+widget_id
+; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('оnload',l);}
+else{w.addEventListener('load',l,false);}}})();
+</script>
+<style>
+.sh_btn_char {
+height:11px!important;
+font-family:sans-serif!important;
+font-size:15px!important;
+}
+</style>
+</body>
+</html>

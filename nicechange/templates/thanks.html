@@ -1,0 +1,327 @@
+﻿{% load render_table from django_tables2 %}
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../static/css/reset.css" rel="stylesheet" media="screen">
+  <link href="../static/css/style.min.css" rel="stylesheet" media="screen">
+  <link href="../static/img/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+
+</head>
+
+<body class="page">
+<div class="page__line page__line--offer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-lg-4"></div>
+      <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+        <div class="logo" onclick="location.href='/';"><img src="../static/img/logo__image.png" alt="" class="logo__img"></div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 text-center text-md-right">
+        <div class="lang-switch">
+          <div class="lang-switch__title">Choice language:</div>
+          <div class="lang-switch__items">
+            <a href="" class="lang-switch__lang lang-switch__lang--ru"></a>
+            <a href="" class="lang-switch__lang lang-switch__lang--en"></a>
+            <a href="" class="lang-switch__lang lang-switch__lang--de"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offer">
+        <h1 class="offer__title" id="dateFolder">КАПИТАЛИЗАЦИЯ КРИПТОРЫНКА НА </h1>
+      <div class="offer__money-progress">
+        <img class="offer__money-progress-img" src="../static/img/offer__money-progress.png" alt="">
+        <div class="offer__money-progress-count">  198 249 824 587</div>
+        <div class="offer__money-progress-currency">$ USA</div>
+      </div>
+      <div class="offer__subtitle">Старт биржи для безопасного обмена токенов - 4й квартал 2017.<br>
+        Если Вы хотите быть первым среди брокеров<br>оставьте свой e-mail.</div>
+    </div>
+            <script LANGUAGE="JavaScript">
+temp_date = new Date();
+day = temp_date.getDate();
+month = temp_date.getMonth() + 1;
+year = temp_date.getFullYear();
+if (day < 10) {
+day = "0" + day;
+}
+if (month <10) {
+month = "0" + month;
+}
+document.getElementById('dateFolder').innerHTML += day + "." + month + "." + year;
+</SCRIPT>
+  </div>
+</div>
+<div class="page__line page__line--hollow">
+</br>
+  <div>
+      <div class="page__title"> Спасибо за обращение! </br>Наши специалисты ответят Вам в ближайшее время! </div>
+</div>
+</div>
+<div class="page__line page__line--gray-lightest">
+  <div class="container">
+    <div class="page__title page__title--decore">Что такое TakeToken?</div>
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-3">
+        <div class="step">
+          <div class="step__img">
+            <img src="../static/img/step-1.png" alt="">
+            <div class="step__img-errow d-none d-lg-block"><img src="../static/img/errow-right.png" alt=""></div>
+            <div class="step__img-errow step__img-errow--round d-none d-sm-block d-lg-none"><img src="../static/img/errow-round-left.png" alt=""></div>
+          </div>
+          <div class="step__title">Где купить<br>криптовалюту? </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-5">
+        <div class="step">
+          <div class="step__img">
+            <img src="../static/img/step-2.png" alt="">
+            <div class="step__img-errow d-none d-lg-block"><img src="../static/img/errow-right.png" alt=""></div>
+            <div class="step__img-errow step__img-errow--round d-none d-sm-block step__img-errow--reverce d-lg-none"><img src="../static/img/errow-round-right.png" alt=""></div>
+          </div>
+          <div class="step__title">Сторонние «обменники»,<br>невыгодный курс, без гарантий</div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-3">
+        <div class="step">
+          <div class="step__img">
+            <img src="../static/img/step-3.png" alt="">
+            <div class="step__img-errow step__img-errow--round d-none d-sm-block"><img src="../static/img/errow-round-left.png" alt=""></div>
+          </div>
+          <div class="step__title">Биржа <br>«TakeToken»</div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-3">
+        <div class="step">
+          <div class="step__img">
+            <img src="../static/img/step-6.png" alt="">
+            <div class="step__img-errow step__img-errow--round d-none d-sm-block step__img-errow--reverce"><img src="../static/img/errow-round-right.png" alt=""></div>
+          </div>
+          <div class="step__title">Где купить<br>криптовалюту? </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-5">
+        <div class="step">
+          <div class="step__img">
+            <img src="../static/img/step-5.png" alt="">
+            <div class="step__img-errow step__img-errow--reverce d-none d-lg-block"><img src="../static/img/errow-left.png" alt=""></div>
+            <div class="step__img-errow step__img-errow--round d-none d-sm-block d-lg-none"><img src="../static/img/errow-round-left.png" alt=""></div>
+          </div>
+          <div class="step__title">Сторонние «обменники»,<br>невыгодный курс, без гарантий</div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-3">
+        <div class="step">
+          <div class="step__img">
+            <img src="../static/img/step-4.png" alt="">
+            <div class="step__img-errow step__img-errow--reverce d-none d-lg-block"><img src="../static/img/errow-left.png" alt=""></div>
+            <div class="step__img-errow step__img-errow--round d-none d-sm-block step__img-errow--reverce d-lg-none"><img src="../static/img/errow-round-right.png" alt=""></div>
+          </div>
+          <div class="step__title">Биржа <br>«TakeToken»</div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-5">
+        <div class="step step--last">
+          <div class="step__img">
+            <img src="../static/img/step-7.png" alt="">
+          </div>
+          <div class="step__title">Теперь Вы<br>счастливый обладатель<br>криптовалют!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page__line page__line--white">
+  <div class="container">
+    <div class="page__title page__title--decore mb-3 mb-sm-5">Почему TakeToken?</div>
+    <div class="row justify-content-center text-center mb-3 mb-sm-5">
+      <div class="col-sm-12 col-lg-4">
+        <h5 class="mb-3 mb-sm-4">Прямая покупка</h5>
+        <img src="../static/img/shield.png" alt="">
+        <div class="mt-4 mb-4 mb-sm-5">Вы напрямую, без посредников, покупаете/продаете у продавца.</div>
+      </div>
+      <div class="col-sm-12 col-lg-4">
+        <h5 class="mb-3 mb-sm-4">Анонимность</h5>
+        <img src="../static/img/mask.png" alt="">
+        <div class="mt-4 mb-4 mb-sm-5">Мы не храним историю Вашей переписки и регистрационные данные.</div>
+      </div>
+      <div class="col-sm-12 col-lg-4">
+        <h5 class="mb-3 mb-sm-4">Безопасная сделка</h5>
+        <img src="../static/img/purse.png" alt="">
+        <div class="mt-3">Токены до момента выполения условий сделки хранятся на кошельках биржи.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page__line page__line--gray-lightest">
+    <div class="container">
+      <div class="page__title page__title--decore mb-3">Отзывы</div>
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="comment">
+                  <div class="comment__left">
+                    <img class="comment__ava" src="../static/img/user.jpg">
+                    <div class="comment__name hidden-sm-up">Александр С.</div>
+                  </div>
+                  <div class="comment__right">
+                    <div class="comment__text">Спасибо за быстрый и простой обмен. Понятно и быстро объяснили как завети кошелек. В итоге это было сложнее чем купить биткоин</div>
+                    <div class="comment__name hidden-sm-down">Александр С.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="comment">
+                  <div class="comment__left">
+                    <img class="comment__ava" src="../static/img/user2.jpg">
+                    <div class="comment__name hidden-sm-up">Евгений Г.</div>
+                  </div>
+                  <div class="comment__right">
+                    <div class="comment__text">Быстро, четко, без лишних слов и вопросов. Ребята, запускайте биржу быстрее.</div>
+                    <div class="comment__name hidden-sm-down">Евгений Г.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="comment">
+                  <div class="comment__left">
+                    <img class="comment__ava" src="../static/img/user1.jpg">
+                    <div class="comment__name hidden-sm-up">Катя С.</div>
+                  </div>
+                  <div class="comment__right">
+                    <div class="comment__text">К обмену вопросов нет, спасибо. Особенно понравилась, что не боясь конкуренции показывают ссылки на другие обменники. Так держать ))) Есть на бирже будет также просто, как у вас сейчас, будет совсем здорово. Очень хочется видеть предложения в реальном времени.</div>
+                    <div class="comment__name hidden-sm-down">Катя С.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="page__line page__line--offer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 hidden-sm-down"><p class="text-white text-center text-md-left">SuperChange © 2017. All rights reserved.</p></div>
+      <div class="col-sm-12 col-md-6 text-center text-md-right">
+        <div class="d-flex justify-content-center justify-content-lg-end mt-4 mt-md-0">
+          <div class="menu menu--white mr-5">
+            <div class="menu__item"><a href="/help/" class="menu__link">Помощь</a></div>
+          </div>
+          <div class="menu menu--white">
+            <div class="menu__item"><a href="/about/" class="menu__link">О проекте</a></div>
+            <div class="menu__item"><a href="/purse/" class="menu__link">Получить кошелек</a></div>
+            <div class="menu__item"><a href="/token/" class="menu__link">Описание токенов в листинге</a></div>
+            <div class="menu__item"><a href="/contact/" class="menu__link">Обратная связь</a></div>
+          </div>
+        </div>
+        <div class="logo logo--footer mt-4"><img src="../static/img/logo__image-two.png" alt="" class="logo__img"></div>
+      </div>
+      <div class="col-sm-12 col-md-6 hidden-sm-up mt-4"><p class="text-white text-center text-md-left">Taketoken © 2017. Все права защищены.</p></div>
+    </div>
+  </div>
+</footer>
+
+<!--<div class="chat">-->
+  <!--<div class="chat__header">-->
+    <!--<div class="chat__header&#45;&#45;left"><input class="chat__input" type="text" placeholder="user e-mail"></div>-->
+    <!--<div class="chat__header&#45;&#45;right"><button class="btn btn-warning">Start deal!</button></div>-->
+    <!--<div class="chat__close">×</div>-->
+  <!--</div>-->
+  <!--<div class="chat__body">-->
+    <!--<div class="chat__messages">-->
+      <!--<div class="chat__message">-->
+        <!--<div class="chat__cloud">Как купить...</div>-->
+        <!--<div class="chat__time">19:17</div>-->
+      <!--</div>-->
+      <!--<div class="chat__message flex-row-reverse">-->
+        <!--<div class="chat__cloud chat__cloud&#45;&#45;reverse chat__cloud&#45;&#45;gray ">Как купить...</div>-->
+        <!--<div class="chat__time">19:17</div>-->
+      <!--</div>-->
+      <!--<div class="chat__message">-->
+        <!--<div class="chat__cloud">Как купить...</div>-->
+        <!--<div class="chat__time">19:17</div>-->
+      <!--</div>-->
+      <!--<div class="chat__message flex-row-reverse">-->
+        <!--<div class="chat__cloud chat__cloud&#45;&#45;reverse chat__cloud&#45;&#45;gray ">Как купить...</div>-->
+        <!--<div class="chat__time">19:17</div>-->
+      <!--</div>-->
+      <!--<div class="chat__message">-->
+        <!--<div class="chat__cloud">Как купить...</div>-->
+        <!--<div class="chat__time">19:17</div>-->
+      <!--</div>-->
+      <!--<div class="chat__message flex-row-reverse">-->
+        <!--<div class="chat__cloud chat__cloud&#45;&#45;reverse chat__cloud&#45;&#45;gray ">Как купить...</div>-->
+        <!--<div class="chat__time">19:17</div>-->
+      <!--</div>-->
+      <!--<div class="chat__message">-->
+        <!--<div class="chat__cloud">Как купить...</div>-->
+        <!--<div class="chat__time">19:17</div>-->
+      <!--</div>-->
+      <!--<div class="chat__message flex-row-reverse">-->
+        <!--<div class="chat__cloud chat__cloud&#45;&#45;reverse chat__cloud&#45;&#45;gray ">Как купить...</div>-->
+        <!--<div class="chat__time">19:17</div>-->
+      <!--</div>-->
+      <!--<div class="chat__message">-->
+        <!--<div class="chat__cloud">Как купить...</div>-->
+        <!--<div class="chat__time">19:17</div>-->
+      <!--</div>-->
+      <!--<div class="chat__message flex-row-reverse">-->
+        <!--<div class="chat__cloud chat__cloud&#45;&#45;reverse chat__cloud&#45;&#45;gray ">Как купить...</div>-->
+        <!--<div class="chat__time">19:17</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="chat__footer">-->
+    <!--<div class="chat__footer&#45;&#45;left"><textarea class="chat__textarea" name="" id="" placeholder="Впишите сюда свой вопрос."></textarea></div>-->
+    <!--<div class="chat__footer&#45;&#45;right"><button class="btn btn-warning btn-sm">Sand</button></div>-->
+  <!--</div>-->
+<!--</div>-->
+<script src="../static/js/script.min.js"></script>
+<script type='text/javascript'>
+(function(){ var widget_id = 'lRLplrjsH0';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+s.src = '//code.jivosite.com/script/widget/'+widget_id
+; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('оnload',l);}
+else{w.addEventListener('load',l,false);}}})();
+</script>
+<style>
+.sh_btn_char {
+height:11px!important;
+font-family:sans-serif!important;
+font-size:15px!important;
+}
+</style>
+</body>
+
+</html>
+
+
+

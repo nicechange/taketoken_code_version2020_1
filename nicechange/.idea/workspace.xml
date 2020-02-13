@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/offers/deals.py" line="58" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="adc73083-cb0a-407a-b136-fdbd819c9801" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/nicechange$admin.coverage" NAME="admin Coverage Results" MODIFIED="1535725004543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nicechange" />
+    <SUITE FILE_PATH="coverage/nicechange$Test__nicechange.coverage" NAME="Test: nicechange Coverage Results" MODIFIED="1505985673120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/nicechange$parser.coverage" NAME="parser Coverage Results" MODIFIED="1506079642678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses" />
+    <SUITE FILE_PATH="coverage/nicechange$wlt.coverage" NAME="wlt Coverage Results" MODIFIED="1519980960662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/accounts/migrations" />
+    <SUITE FILE_PATH="coverage/nicechange$settings.coverage" NAME="settings Coverage Results" MODIFIED="1505912295778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nicechange" />
+    <SUITE FILE_PATH="coverage/nicechange$.coverage" NAME=" Coverage Results" MODIFIED="1505131500740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/nicechange$update.coverage" NAME="update Coverage Results" MODIFIED="1510158427099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/presentation" />
+    <SUITE FILE_PATH="coverage/nicechange$graf.coverage" NAME="graf Coverage Results" MODIFIED="1520257425972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/accounts" />
+    <SUITE FILE_PATH="coverage/nicechange$burses.coverage" NAME="burses Coverage Results" MODIFIED="1511525522693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/offers" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nicechange_db@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nicechange_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nicechange_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="nicechange_db: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nicechange_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="nicechange_db: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nicechange_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="nicechange_db: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nicechange_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="nicechange_db: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nicechange_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="nicechange_db: database" type="162271b6:PgImplModel$Database" />
+        <item name="access methods" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="nicechange_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="roles" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="nicechange" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/offers/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7990">
+              <caret line="492" column="22" selection-start-line="492" selection-start-column="22" selection-end-line="492" selection-end-column="22" />
+              <folding>
+                <element signature="e#24#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/privatemessages/tornadoapp.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/privatemessages.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/admins.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/privatemessages/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2839">
+              <caret line="179" column="23" selection-start-line="179" selection-start-column="23" selection-end-line="190" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://3249c722-9094-4525-b8e6-cd557ca4d516/database/nicechange_db/schema/public/table/accounts_notifications">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/offers.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index_main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nicechange/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Черно</find>
+      <find>rate</find>
+      <find>draft</find>
+      <find>broker</find>
+      <find>check</find>
+      <find>one</find>
+      <find>отме</find>
+      <find>write_message</find>
+      <find>img</find>
+      <find>conversation</find>
+      <find>waiters</find>
+      <find>send</find>
+      <find>self.channe</find>
+      <find>/profile/</find>
+      <find>черно</find>
+      <find>Ethe</find>
+      <find>Показа</find>
+      <find>больш</find>
+      <find>name=</find>
+      <find>form</find>
+      <find>upda</find>
+      <find>update</find>
+      <find>rand</find>
+      <find>view</find>
+      <find>sen</find>
+      <find>date</find>
+      <find>dealro</find>
+      <find>delete</find>
+      <find>The username and password were incorrect</find>
+      <find>login.html</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>src=&quot;../static/img/</replace>
+      <replace>src=&quot;../static/</replace>
+      <replace>src=&quot;../static/js/</replace>
+      <replace>href=&quot;../static/img/</replace>
+      <replace>&quot;../</replace>
+      <replace>../static</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>F:\shagin\djangopr\nicechange</dir>
+      <dir>F:\shagin\djangopr\nicechange\env</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/templates/seller.html" />
+        <option value="$PROJECT_DIR$/templates/buyer.html" />
+        <option value="$PROJECT_DIR$/accounts/temp.py" />
+        <option value="$PROJECT_DIR$/templates/transaction.html" />
+        <option value="$PROJECT_DIR$/offers/forms.py" />
+        <option value="$PROJECT_DIR$/burse/tables.py" />
+        <option value="F:/28 МАЯ 2018 ДИЗАЙН/nicechange.github.io-master/build/dealings.html" />
+        <option value="$PROJECT_DIR$/templates/codeauth.html" />
+        <option value="$PROJECT_DIR$/offers/myoffers.py" />
+        <option value="$PROJECT_DIR$/env/Lib/site-packages/django_tables2/templates/django_tables2/table.html" />
+        <option value="$PROJECT_DIR$/env/Lib/site-packages/online_status/middleware.py" />
+        <option value="$PROJECT_DIR$/templates/registration/profile.html" />
+        <option value="$PROJECT_DIR$/burse/models.py" />
+        <option value="$PROJECT_DIR$/templates/registration/profile1.html" />
+        <option value="$PROJECT_DIR$/burse/forms.py" />
+        <option value="$PROJECT_DIR$/offers/offerstable.py" />
+        <option value="$PROJECT_DIR$/templates/404.html" />
+        <option value="$PROJECT_DIR$/accounts/models.py" />
+        <option value="$PROJECT_DIR$/templates/wallets.html" />
+        <option value="$PROJECT_DIR$/templates/registration/register.html" />
+        <option value="$PROJECT_DIR$/templates/alerts.html" />
+        <option value="$PROJECT_DIR$/templates/profile.html" />
+        <option value="$PROJECT_DIR$/templates/courses.html" />
+        <option value="$PROJECT_DIR$/templates/rates.html" />
+        <option value="$PROJECT_DIR$/templates/register.html" />
+        <option value="$PROJECT_DIR$/privatemessages/templates/chat.html" />
+        <option value="$PROJECT_DIR$/offers/tornadooffers.py" />
+        <option value="$PROJECT_DIR$/static/privatemessages.js" />
+        <option value="$PROJECT_DIR$/privatemessages/utils.py" />
+        <option value="$PROJECT_DIR$/privatemessages/tornadoapp.py" />
+        <option value="$PROJECT_DIR$/offers/deals.py" />
+        <option value="$PROJECT_DIR$/templates/flatpages/news_details.html" />
+        <option value="$PROJECT_DIR$/burse/views.py" />
+        <option value="$PROJECT_DIR$/offers/burses.py" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/nicechange/urls.py" />
+        <option value="$PROJECT_DIR$/accounts/forms.py" />
+        <option value="$PROJECT_DIR$/env/Lib/site-packages/templated_email/templates/templated_email/rspwn.html.email" />
+        <option value="$PROJECT_DIR$/templates/rspwn.html" />
+        <option value="$PROJECT_DIR$/offers/tables.py" />
+        <option value="$PROJECT_DIR$/offers/models.py" />
+        <option value="$PROJECT_DIR$/templates/dealings_new.html" />
+        <option value="$PROJECT_DIR$/offers/views.py" />
+        <option value="$PROJECT_DIR$/templates/registration/login_err.html" />
+        <option value="$PROJECT_DIR$/templates/index_main.html" />
+        <option value="$PROJECT_DIR$/accounts/views.py" />
+        <option value="$PROJECT_DIR$/env/Lib/site-packages/bittrex/bittrex.py" />
+        <option value="$PROJECT_DIR$/nicechange/settings.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3249c722-9094-4525-b8e6-cd557ca4d516/console.sql" />
+        <option value="$PROJECT_DIR$/templates/answer.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="nicechange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nicechange" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nicechange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nicechange" type="462c0819:PsiDirectoryNode" />
+              <item name="env" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nicechange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nicechange" type="462c0819:PsiDirectoryNode" />
+              <item name="env" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nicechange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nicechange" type="462c0819:PsiDirectoryNode" />
+              <item name="env" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nicechange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nicechange" type="462c0819:PsiDirectoryNode" />
+              <item name="nicechange" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nicechange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nicechange" type="462c0819:PsiDirectoryNode" />
+              <item name="offers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nicechange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nicechange" type="462c0819:PsiDirectoryNode" />
+              <item name="privatemessages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nicechange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nicechange" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nicechange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nicechange" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\shagin\djangopr\nicechange\templates\registration" />
+      <recent name="F:\shagin\djangopr\nicechange\env\Lib\site-packages\templated_email\templates\templated_email" />
+      <recent name="F:\shagin\djangopr\nicechange\templates" />
+      <recent name="F:\shagin\djangopr\nicechange\templates\flatpages" />
+      <recent name="F:\shagin\djangopr\nicechange\static\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\shagin\djangopr\nicechange\templates" />
+      <recent name="F:\shagin\djangopr\nicechange\templates\registration" />
+      <recent name="F:\shagin\djangopr\nicechange\templates\ckeditor" />
+      <recent name="F:\shagin\djangopr\nicechange\static" />
+      <recent name="F:\shagin\djangopr\nicechange\static\css" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.admin">
+    <configuration name="admin" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nicechange" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/nicechange" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nicechange/admin.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="burses" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nicechange" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/offers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/offers/burses.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="graf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nicechange" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/accounts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/accounts/graf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="update" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nicechange" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/presentation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/presentation/update.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="wlt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nicechange" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/accounts/migrations" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/accounts/migrations/wlt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <module name="nicechange" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="F:\shagin\djangopr\nicechange\env\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="nicechange" type="Python.DjangoServer" factoryName="Django server">
+      <module name="nicechange" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="nicechange.settings" />
+      </envs>
+      <option name="SDK_HOME" value="F:\shagin\djangopr\nicechange\env\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/env" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.nicechange" />
+      <item itemvalue="Python.admin" />
+      <item itemvalue="Python.update" />
+      <item itemvalue="Python.burses" />
+      <item itemvalue="Python.graf" />
+      <item itemvalue="Python.wlt" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.admin" />
+        <item itemvalue="Python.graf" />
+        <item itemvalue="Python.wlt" />
+        <item itemvalue="Python.burses" />
+        <item itemvalue="Python.update" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="adc73083-cb0a-407a-b136-fdbd819c9801" name="Default" comment="" />
+      <created>1504865560361</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1504865560361</updated>
+      <workItem from="1551452606818" duration="665000" />
+      <workItem from="1551453299444" duration="1216000" />
+      <workItem from="1551454981081" duration="1442000" />
+      <workItem from="1551469747276" duration="5441000" />
+      <workItem from="1551508373808" duration="251000" />
+      <workItem from="1551515003310" duration="1775000" />
+      <workItem from="1551546922063" duration="1626000" />
+      <workItem from="1551602524663" duration="4329000" />
+      <workItem from="1551806964006" duration="257000" />
+      <workItem from="1551810107749" duration="203000" />
+      <workItem from="1551896778225" duration="47000" />
+      <workItem from="1552721356401" duration="376000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Test__nicechange - 2017.09.21 at 12h 25m 18s.xml">
+      <configuration name="Test: nicechange" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="17628000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49407783" visible="true" weight="0.18381241" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.50592214" side_tool="true" weight="0.22493887" />
+      <window_info anchor="bottom" id="File Transfer" order="0" sideWeight="0.49838188" visible="true" weight="0.2718894" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32969433" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.73410755" weight="0.027995521" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.83679706" weight="0.39865622" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49924356" weight="0.32843137" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50161815" side_tool="true" visible="true" weight="0.38398692" />
+      <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.7329803" weight="0.33660132" />
+      <window_info anchor="bottom" x="29" y="667" width="1479" height="281" id="Terminal" order="10" sideWeight="0.46026894" weight="0.18232661" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="12" sideWeight="0.65281177" weight="0.32922733" />
+      <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.64523447" visible="true" weight="0.119281046" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" sideWeight="0.49848714" weight="0.14215687" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" x="625" y="347" width="132" height="38" id="Remote Host" order="3" type="WINDOWED" weight="0.23154762" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.027231468" />
+      <window_info anchor="right" id="Data View" order="6" />
+      <window_info anchor="right" id="SciView" order="7" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/presentation/views.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/offers/deals.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/env/Lib/site-packages/bitcoinrpc/config.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/env/Lib/site-packages/bitcoinrpc/config.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/env/Lib/site-packages/bitcoinrpc/connection.py</url>
+          <line>160</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/env/Lib/site-packages/bitcoinrpc/connection.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/env/Lib/site-packages/bitcoinrpc/proxy.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/offers/myoffers.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/offers/management/commands/starttornadooffers.py</url>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/offers/utils.py</url>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/env/Lib/site-packages/social_django/views.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/burse/views.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/burse/views.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/offers/deals.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/socket.py</url>
+          <line>711</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/http/client.py</url>
+          <line>935</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/offers/tornadooffers.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/accounts/views.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/offers/views.py</url>
+          <line>638</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/accounts/views.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/templates/contact.html</url>
+          <line>113</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Python.DjangoServer">
+        <watch expression="client.get_coinbase()" />
+        <watch expression="balance" />
+        <watch expression="client.get_balance(&quot;0xDaEe3e1b7683Ec90a27331aaB8Cb1E2c2859336F&quot;)" />
+        <watch expression="client.get_balance(&quot;0x32Be343B94f860124dC4fEe278FDCBD38C102D88&quot;)" />
+        <watch expression="client" />
+        <watch expression="client.get_balance(&quot;0x6Db960F64A986D1c084F8b324E56541b1c541bD3&quot;)" />
+        <watch expression="web3.eth.register(&quot;0x6Db960F64A986D1c084F8b324E56541b1c541bD3&quot;)" />
+        <watch expression="Thread.objects.filter(id=item_id).last()" />
+        <watch expression="ThreadActivity.objects.filter(user=request.user, thread=Thread.objects.filter(id=thread_id)).last()" />
+        <watch expression="r.publish(thread_id, 'crsent')" />
+        <watch expression="ch" />
+        <watch expression="r " />
+        <watch expression="request.POST[0]" />
+        <watch expression="auth_code + &quot;@taketoken.net?secret=&quot; + request.GET['secret'].__str__()[0:-1]" />
+        <watch expression="auth_code + &quot;@taketoken.net?secret=&quot; + request.GET['secret'].__str__()" />
+        <watch expression="auth_code + &quot;@taketoken.net?secret=&quot; + request.GET['secret'].__str__()" />
+        <watch expression="&quot;otpauth://totp/&quot;+request.user.username + &quot;@taketoken.net?secret=&quot; + request.GET['secret'].__str__()" />
+        <watch expression=" conn.info" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/social_django/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/privatemessages/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/login_err.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="22" column="3989" lean-forward="true" selection-start-line="22" selection-start-column="3989" selection-end-line="22" selection-end-column="3989" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/offers/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/authentificator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="97" column="16" lean-forward="true" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
+          <folding>
+            <element signature="e#24#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burse/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burse/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="91" column="60" selection-start-line="91" selection-start-column="60" selection-end-line="91" selection-end-column="60" />
+          <folding>
+            <element signature="e#24#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/404fc5d8/797daff6-24c9-4017-851c-d6febe41e112/nicechange_db.public.auth_group" />
+    <entry file="das://table:/404fc5d8/c9e50990-b41e-45ba-a5e1-95d84ad5f670/nicechange_db.public.auth_permission" />
+    <entry file="das://table:/404fc5d8/c9e50990-b41e-45ba-a5e1-95d84ad5f670/nicechange_db.public.django_migrations" />
+    <entry file="das://table:/404fc5d8/c9e50990-b41e-45ba-a5e1-95d84ad5f670/nicechange_db.public.django_flatpage_sites" />
+    <entry file="das://table:/404fc5d8/c9e50990-b41e-45ba-a5e1-95d84ad5f670/nicechange_db.public.django_flatpage" />
+    <entry file="file://$PROJECT_DIR$/accounts/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="40" column="86" selection-start-line="40" selection-start-column="86" selection-end-line="40" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burse/mails.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/commontools/commontools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burse/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/bittrex/bittrex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-901">
+          <caret line="636" column="17" lean-forward="true" selection-start-line="636" selection-start-column="17" selection-end-line="636" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/404fc5d8/c9e50990-b41e-45ba-a5e1-95d84ad5f670/nicechange_db.public.helpdesk_kbcategory" />
+    <entry file="das://table:/404fc5d8/c9e50990-b41e-45ba-a5e1-95d84ad5f670/nicechange_db.public.accounts_notifications" />
+    <entry file="das://table:/404fc5d8/c9e50990-b41e-45ba-a5e1-95d84ad5f670/nicechange_db.public.accounts_alreadyenter" />
+    <entry file="file://$PROJECT_DIR$/privatemessages/management/commands/starttornadoapp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <folding>
+            <element signature="e#0#13#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/privatemessages/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/privatemessages/templates/chat.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/graf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/list.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nicechange/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6834">
+          <caret line="419" column="44" selection-start-line="419" selection-start-column="44" selection-end-line="419" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/797daff6-24c9-4017-851c-d6febe41e112/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://797daff6-24c9-4017-851c-d6febe41e112/database/nicechange_db/schema/public/table/auth_group_permissions" />
+    <entry file="das://c9e50990-b41e-45ba-a5e1-95d84ad5f670/database/nicechange_db/schema/public/table/helpdesk_ticketcustomfieldvalue" />
+    <entry file="das://797daff6-24c9-4017-851c-d6febe41e112/database/nicechange_db/schema/public/table/auth_user" />
+    <entry file="file://$PROJECT_DIR$/nicechange/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dealings_new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7718">
+          <caret line="454" column="59" selection-start-line="454" selection-start-column="59" selection-end-line="454" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nicechange/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="14" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/async_timeout-1.4.0.dist-info/DESCRIPTION.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3249c722-9094-4525-b8e6-cd557ca4d516/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/answer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/profile.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/offers/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7990">
+          <caret line="492" column="22" selection-start-line="492" selection-start-column="22" selection-end-line="492" selection-end-column="22" />
+          <folding>
+            <element signature="e#24#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/privatemessages/tornadoapp.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admins.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/privatemessages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2839">
+          <caret line="179" column="23" selection-start-line="179" selection-start-column="23" selection-end-line="190" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3249c722-9094-4525-b8e6-cd557ca4d516/database/nicechange_db/schema/public/table/accounts_notifications">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/offers.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index_main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nicechange/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/privatemessages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

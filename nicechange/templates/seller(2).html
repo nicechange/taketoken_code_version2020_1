@@ -1,0 +1,95 @@
+{% load render_table from django_tables2 %}
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="/static/js/jquery-latest.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.tablesorter.js"></script>
+    <link rel="stylesheet" href="http://www.atlasestateagents.co.uk/css/tether.min.css">
+    <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="/static/js/script.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<br>
+<h3>Сделка (продавец)</h3>
+<h3 id='caption' hidden=true>Сделка завершена! Для дальнейших действий перейдите на главную!</h3>
+</br>
+<link rel="stylesheet" href="{% static 'django_tables2/themes/paleblue/css/screen.css' %}" />
+<form action="/deal/{{ id }}/" method="post">
+    {% csrf_token %}
+    <script>
+        $(document).ready(function() {
+            prepare()
+
+});
+
+
+    function prepare() {
+        document.getElementById('prepare').hidden = {{ hide_button_prepare }};
+        document.getElementById('given').hidden = {{ hide_button_given }};
+        ws = new WebSocket('ws://' + window.location.host + ':8889' + '/{{ id }}' + "/");
+        cs = new WebSocket('ws://' + window.location.host + ':8888' + '/{{ id }}' + "/");
+        ws.onclose = function(){
+            // Try to reconnect in 5 seconds
+        };
+          alert("Закрыто!");
+        ws.onmessage = function(e){
+            // Try to reconnect in 5 seconds
+          if (e.data.toString() == 'sent')
+          {
+             alert("Покупатель уведомляет, что фиат отправлен. Проверяйте.");
+          }
+          if (e.data.toString() == 'crgiven')
+          {
+             alert("Покупатель уведомляет, что крипта получена. Сделка проведена успешно. Поздравляем!");
+              document.getElementById('prepare').hidden = true
+              document.getElementById('given').hidden = true
+              document.getElementById('cancel').hidden = true
+              document.getElementById('caption').hidden = false
+          }
+        };
+        }
+
+     function ongiven() {
+         ws.send('given');
+         cs.send('Фиат получен.')
+         ws.send('crsent');
+         cs.send('Крипта отправлена.')
+     };
+
+     function onwait() {
+        if ({{ sellerbalance }} < {{ quantity }}) {
+            alert("Ваш баланс слишком мал!");
+        } else
+         {
+             ws.send('wait');
+             cs.send('Крипта заблокирована. Ожидаем фиат.')
+             alert("Крипта заблокирована. Ожидаем фиат.");
+         }
+
+     }
+
+
+
+
+</script>
+    {{ form.as_p }}
+    Выбранный исходный кошелек: {{ wallet }}
+    <input id='prepare' name='prepare' type="submit"  value="Заблокировать крипту и ждать оплату" onclick="onwait()"/>
+    <input id='given' name='given' type="submit" value="Фиат получен" onclick="ongiven()"/>
+    <input id='cancel' name='cancel' type="submit" value="Отмена" />
+</form>
+
+
+          <table class="table" id="twallet">
+              {% render_table wallets %}
+          </table>
+
+
+      </div>
+  </div>
+<br/><a href="/nicechange/">Главная</a>
+</body>
+</html>

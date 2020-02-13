@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+{% load render_table from django_tables2 %}
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Taketoken</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preload" href="/static/css/style_new.min.css" as="style">
+    <link rel="stylesheet" href="/static/css/style_new.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="/static/js/app.js" as="script">
+    <link rel="preload" href="/static/fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="/static/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/static/fonts/opensanssemibold.woff2" as="font">
+    <link rel="preload" href="/static/fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="/static/fonts/opensansextrabold.woff2" as="font">
+</head>
+<body class="inner-page__body">
+
+<nav class="navbar navbar--fixed-top navbar--inner">
+    <div class="container container--flex">
+        <a href="index.html" class="logo logo--header">
+            <img width="60" height="51" src="/static/img/teketoken_logo_header.png" alt="logo TakeToken">
+        </a>
+        <div class="navbar--right">
+            <ul class="navbar-nav">
+                <li>
+                    <a href="/profile/">
+                        <svg class="" width="18" height="18">
+                            <use xlink:href="#sprite-user-circle"></use>
+                        </svg>
+                        <span>{{ user }}</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/logout/" title="Разлогиниться">
+                        <svg class="" width="18" height="18">
+                            <use xlink:href="#sprite-sign-out-alt"></use>
+                        </svg>
+                        <span>Выйти</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body class="inner-page">
+    <main>
+        <section class="token bs mt-5 mb-5 mx-auto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 token-description description__align p-0 p-md-3 mb-md-5 mx-auto">
+                        <div class="row">
+                            <div class="col-md-4 col-12 mb-4 token__name text-md-left">Статус безопасной сделки</div>
+                            <div class="col-md-7 col-12 mb-4">
+                                <div class="alert mx-2 mx-md-0 alert-success" role="alert">
+                                    ваши BTC заблокированы
+                                </div>
+                                <div class="alert mx-2 mx-md-0 alert-warning" role="alert">
+                                    Ожидается перевод средств
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-6 col-12 token-type__description p-3 mb-5 mx-md-0 mx-auto flex-cols align-items-between">
+                            <div class="wraper  p-sm-5 p-2">
+                                <div class="alert alert-primary" role="alert">Средства получены</div>
+                                <div class="alert alert-danger">0.000045 ВТС заблокировано на счете продавца</div>
+                                <div class="token-alert__left mb-5">Жду средства</div>
+                                <div class="token-alert__right mb-5">Сейчас отправлю</div>
+                                <div class="alert alert-warning">Средства отправлены</div>
+                                <div class="token-alert__left mb-3">Принял, спасибо!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 token-description p-3 mb-5 mx-auto">
+                        <div class="row flex-cols align-items-center mb-4">
+                            <div class="col-md-7 col-xl-8 mb-4 text-center text-border text-md-left">Rulez
+                                <strong>продаёт</strong> 0,000045
+                                BTC<br>
+                                Pigger <strong>покупает</strong> за 6 764 Альфабанк
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-2 text-center">
+                                <span class="token__name">Время сделки</span>
+                                <div class="description__counter mb-1 mt-1" id="timer">
+                                    0<span class="hours">0</span>
+                                    <span>:</span>
+                                    <span class="minutes">00</span>
+                                    <span>:</span>
+                                    <span class="seconds">00</span>
+                                </div>
+                                <a href="/" class="btn token__button" id="reset-token">Завершить сделку</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="alert w-100 alert-success mx-2" role="alert">
+                                Уважаемый Pigger<br>0,000045 BTC з списаны со счёта Rulez и заблокированы до окончания
+                                сделки.
+                            </div>
+                            <div class="col-12 mb-3 mt-2">
+                                Для оплаты полученных BTC вам надо перечислить сумму указанную в сделке на реквизиты
+                                указанные продавцом под его именем в верхнем правом углу или иные, высланные Вам в чате.
+                                Как только вы переслали средства Вам необходимо сообщить об этом продавцу нажав на
+                                кнопку
+                                (средства отправлены) в правом верхнем углу чата.
+                                Как только продавец получит отправленные вами средства, BTC автоматически поступит на
+                                ваш
+                                кошелёк в taketoken.net.
+                            </div>
+                            <div class="alert w-100 alert-warning" role="alert">
+                                Сделка автоматически закроется, как только продавец сообщит о получении средств.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer footer--inner-page">
+    <div class="container">
+    <p>
+        TakeToken
+    </p>
+    <p>
+        Company 2015-2020
+    </p>
+    </div>
+</footer>
+
+ <div class="modal" id="modal">
+     <div class="modal-dialog">
+         <div class="modal-block">
+             <p class="token__name mt-4 pb-4">Время транзакции истекло!</p>
+             <a href="/" class="btn mt-4 mb-4 d-block modal__button">Перейти на Главную</a>
+         </div>
+     </div>
+ </div>
+
+    <script src="/static/js/app.js"></script>
+	<script type='text/javascript'>
+(function(){ var widget_id = 'lRLplrjsH0';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+s.src = '//code.jivosite.com/script/widget/'+widget_id
+; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('оnload',l);}
+else{w.addEventListener('load',l,false);}}})();
+</script>
+	<!-- Start SiteHeart code -->
+<script>
+(function(){
+
+
+// Сетчик и модальное окно
+ if (!navigator.cookieEnabled) {
+ alert('Включите cookie для комфортной работы с этим сайтом!');
+ }
+
+ var dateTimer = new Date(new Date().getTime() + 5400000);
+
+ //поучаем или устанавливаем куку
+ function getCookie(name) {
+ var matches = document.cookie.match(new RegExp(
+ "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+ ));
+ return matches ? decodeURIComponent(matches[1]) : document.cookie = "name=timer; path=/; expires=" +
+ dateTimer.toUTCString();
+ }
+
+ var oprosCookie = getCookie('timer');
+
+ //проверяем ее наличие
+ if (!oprosCookie) {
+ dateTimer = new Date(new Date().getTime() + 5400000);
+ }
+
+ var deadline = dateTimer; //установить дату окончания
+
+ function getTimeRemaining(endtime) {
+
+ var t = Date.parse(endtime) - Date.parse(new Date()),
+ seconds = Math.floor((t / 1000) % 60),
+ minutes = Math.floor((t / 1000 / 60) % 60),
+ hours = Math.floor((t / (1000 * 60 * 60) % 24));
+
+ return {
+ 'total': t,
+ 'seconds': seconds,
+ 'minutes': minutes,
+ 'hours': hours
+ };
+ };
+
+ function setClock(id, endtime) {
+
+ var timer = document.getElementById(id),
+ hours = timer.querySelector('.hours'),
+ minutes = timer.querySelector('.minutes'),
+ seconds = timer.querySelector('.seconds');
+
+ function updateClock() {
+ var t = getTimeRemaining(endtime);
+
+ hours.innerHTML = t.hours;
+ minutes.innerHTML = t.minutes;
+ seconds.innerHTML = t.seconds;
+
+ if (t.total <= 0) { clearInterval(timeInterval); //модальное окно 1 var modal=document.querySelector('#modal');
+     modal.classList.add('modal_active'); //setTimeout(location='exemple.html' , 3000); } }; updateClock(); var
+     timeInterval=setInterval(updateClock, 1000); }; setClock('timer', deadline); var
+     reset=document.querySelector('#reset-token'); reset.addEventListener('click', function (event) {
+     document.cookie="name=timer; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT" ; });
+     
+</script>
+<!-- End SiteHeart code -->
+<style>
+.sh_btn_char {
+height:11px!important;
+font-family:sans-serif!important;
+font-size:15px!important;
+}
+</style>
+</body>
+</html>

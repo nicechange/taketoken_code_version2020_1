@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.cfg
+setup.py
+commontools/__init__.py
+commontools/commontools.py
+commontools/logging.json
+commontools.egg-info/PKG-INFO
+commontools.egg-info/SOURCES.txt
+commontools.egg-info/dependency_links.txt
+commontools.egg-info/not-zip-safe
+commontools.egg-info/top_level.txt

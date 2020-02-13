@@ -1,0 +1,251 @@
+{% load render_table from django_tables2 %}
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://www.atlasestateagents.co.uk/css/tether.min.css">
+<script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+  <link href="../static/css/reset.css" rel="stylesheet" media="screen">
+  <link href="../static/css/style.min.css" rel="stylesheet" media="screen">
+  <link href="../static/img/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+<script type="text/javascript" src="../static/js/jquery-latest.js"></script>
+<script type="text/javascript" src="../static/js/jquery.tablesorter.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<body>
+<h3>Личный кабинет пользователя</h3>
+<h3>Пользователь: {{ user }}</h3>
+<link rel="stylesheet" href="{% static 'django_tables2/themes/paleblue/css/screen.css' %}" />
+<script>
+    var activeTab = 1;
+
+$(document).ready(function() {
+start();
+ function start () {
+
+     ws = new WebSocket('ws://' + '127.0.0.1' + ':8889' + '/' + '{{ user.id }}' + "/");
+
+     ws.onmessage = function (event) {
+         if (event.data = 'item')
+         {
+             alert("У вас новый ответ!");
+             location.reload();
+         }
+
+     };
+     ws.onerror = function (error) {
+         alert("Ошибка " + error.message);
+     };
+     ws.onclose = function (event) {
+         alert(event.code)
+     };
+
+ };
+});
+
+</script>
+<h3>ОПУБЛИКОВАННЫЕ ОРДЕРА И ПРЕДЛОЖНИЯ</h3>
+ <div class="container">
+    <div class="tabs">
+      <!-- Tab panes -->
+        <div class="tabs" data-options="deep_linking:true;">
+      <ul class="tabs__nav nav nav-tabs" id="myTab" role="tablist">
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1').hidden = false; document.getElementById('tab2').hidden = true;
+        document.getElementById('tab3').hidden = true;document.getElementById('tab4').hidden = true;document.getElementById('tab5').hidden = true;
+document.getElementById('tab6').hidden = true; activeTab = 1;">
+          <a class="tabs__link nav-link active" data-toggle="tab" href="#tab1" role="tab" aria-expanded="true">BTC</a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1').hidden = true; document.getElementById('tab2').hidden = false;
+        document.getElementById('tab3').hidden = true;document.getElementById('tab4').hidden = true;document.getElementById('tab5').hidden = true;
+document.getElementById('tab6').hidden = true; activeTab = 2;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab2" role="tab">ETH</a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1').hidden = true; document.getElementById('tab2').hidden = true;
+        document.getElementById('tab3').hidden = false;document.getElementById('tab4').hidden = true;document.getElementById('tab5').hidden = true;
+document.getElementById('tab6').hidden = true; activeTab = 3;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab3" role="tab">LTC</a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1').hidden = true; document.getElementById('tab2').hidden = true;
+        document.getElementById('tab3').hidden = true;document.getElementById('tab4').hidden = false;document.getElementById('tab5').hidden = true;
+document.getElementById('tab6').hidden = true; activeTab = 4;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab4" role="tab">XMR</a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1').hidden = true; document.getElementById('tab2').hidden = true;
+        document.getElementById('tab3').hidden = true;document.getElementById('tab4').hidden = true;document.getElementById('tab5').hidden = false;
+document.getElementById('tab6').hidden = true; activeTab = 5;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab5" role="tab">DASH</a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1').hidden = true; document.getElementById('tab2').hidden = true;
+        document.getElementById('tab3').hidden = true;document.getElementById('tab4').hidden = true;document.getElementById('tab5').hidden = true;
+document.getElementById('tab6').hidden = false; activeTab = 6;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab6" role="tab">ZEC</a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tabs__content tab-content" id="nav-tabContent">
+        <div class="tabs__pane tab-pane fade show active" id="tab1" role="tabpanel" >
+             ОРДЕРА {{ user }}
+            </br>
+            <table class="table">
+              {% render_table orders_btc %}
+                </table>
+            </br>
+        </div>
+        <div class="tabs__pane tab-pane fade" id="tab2" role="tabpanel">
+            ОРДЕРА {{ user }}
+            </br>
+              {% render_table orders_eth %}
+            </br>
+        </div>
+        <div class="tabs__pane tab-pane fade" id="tab3" role="tabpanel">
+            ОРДЕРА {{ user }}
+            </br>
+              {% render_table orders_ltc %}
+            </br>
+        </div>
+          <div class="tabs__pane tab-pane fade" id="tab4" role="tabpanel">
+              ОРДЕРА {{ user }}
+            </br>
+              {% render_table orders_xmr %}
+            </br>
+          </div>
+          <div class="tabs__pane tab-pane fade" id="tab5" role="tabpanel">
+              ОРДЕРА {{ user }}
+            </br>
+              {% render_table orders_dash %}
+            </br>
+
+          </div>
+          <div class="tabs__pane tab-pane fade" id="tab6" role="tabpanel">
+              ОРДЕРА {{ user }}
+            </br>
+              {% render_table orders_zec %}
+            </br>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+<h3>ЧЕРНОВИКИ</h3>
+<div class="container">
+    <div class="tabs">
+      <!-- Tab panes -->
+        <div class="tabs" data-options="deep_linking:true;">
+      <ul class="tabs__nav nav nav-tabs" id="myTab" role="tablist">
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1_2').hidden = false; document.getElementById('tab2_2').hidden = true;
+        document.getElementById('tab3_2').hidden = true;document.getElementById('tab4_2').hidden = true;document.getElementById('tab5_2').hidden = true;
+document.getElementById('tab6_2').hidden = true; activeTab = 1;">
+          <a class="tabs__link nav-link active" data-toggle="tab" href="#tab1_2" role="tab" aria-expanded="true">BTC</a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1_2').hidden = true; document.getElementById('tab2_2').hidden = false;
+        document.getElementById('tab3_2').hidden = true;document.getElementById('tab4_2').hidden = true;document.getElementById('tab5_2').hidden = true;
+document.getElementById('tab6_2').hidden = true; activeTab = 2;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab2_2" role="tab">ETH</a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1_2').hidden = true; document.getElementById('tab2_2').hidden = true;
+        document.getElementById('tab3_2').hidden = false;document.getElementById('tab4_2').hidden = true;document.getElementById('tab5_2').hidden = true;
+document.getElementById('tab6_2').hidden = true; activeTab = 3;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab3" role="tab">LTC</a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1_2').hidden = true; document.getElementById('tab2_2').hidden = true;
+        document.getElementById('tab3_2').hidden = true;document.getElementById('tab4_2').hidden = false;document.getElementById('tab5_2').hidden = true;
+document.getElementById('tab6_2').hidden = true; activeTab = 4;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab4" role="tab">XMR</a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1_2').hidden = true; document.getElementById('tab2_2').hidden = true;
+        document.getElementById('tab3_2').hidden = true;document.getElementById('tab4_2').hidden = true;document.getElementById('tab5_2').hidden = false;
+document.getElementById('tab6_2').hidden = true; activeTab = 5;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab5" role="tab">DASH</a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1_2').hidden = true; document.getElementById('tab2_2').hidden = true;
+        document.getElementById('tab3_2').hidden = true;document.getElementById('tab4_2').hidden = true;document.getElementById('tab5_2').hidden = true;
+document.getElementById('tab6_2').hidden = false; activeTab = 6;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab6" role="tab">ZEC</a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tabs__content tab-content" id="nav-tabContent">
+        <div class="tabs__pane tab-pane fade show active" id="tab1_2" role="tabpanel" >
+             ОРДЕРА {{ user }}
+            </br>
+              {% render_table orders_btc_draft %}
+            </br>
+        </div>
+        <div class="tabs__pane tab-pane fade" id="tab2_2" role="tabpanel">
+            ОРДЕРА {{ user }}
+            </br>
+              {% render_table orders_eth_draft %}
+            </br>
+        </div>
+        <div class="tabs__pane tab-pane fade" id="tab3_2" role="tabpanel">
+            ОРДЕРА {{ user }}
+            </br>
+              {% render_table orders_ltc_draft %}
+            </br>
+        </div>
+          <div class="tabs__pane tab-pane fade" id="tab4_2" role="tabpanel">
+              ОРДЕРА {{ user }}
+            </br>
+              {% render_table orders_xmr_draft %}
+            </br>
+          </div>
+          <div class="tabs__pane tab-pane fade" id="tab5_2" role="tabpanel">
+              ОРДЕРА {{ user }}
+            </br>
+              {% render_table orders_dash_draft %}
+            </br>
+
+          </div>
+          <div class="tabs__pane tab-pane fade" id="tab6_2" role="tabpanel">
+              ОРДЕРА {{ user }}
+            </br>
+              {% render_table orders_zec_draft %}
+            </br>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+<br/><a href="/messages/">Мои сообщения: {{ messages }}</a>
+<br/><a href="/wallets/">Мои кошельки </a>
+<br/><a href="/order/">Создать ордер</a>
+<br/><a href="/notifications/">Настройки уведомлений</a>
+<br/><a href="/profile/">Настройки профиля </a>
+<br/><a href="/nicechange/">Главная</a>
+ <script src="../static/js/script.min.js"></script>
+<script type='text/javascript'>
+(function(){ var widget_id = 'lRLplrjsH0';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+s.src = '//code.jivosite.com/script/widget/'+widget_id
+; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('оnload',l);}
+else{w.addEventListener('load',l,false);}}})();
+</script>
+<style>
+.sh_btn_char {
+height:11px!important;
+font-family:sans-serif!important;
+font-size:15px!important;
+}
+</style>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

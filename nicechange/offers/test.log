@@ -1,0 +1,12 @@
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed
+INFO:btfxwss.connection:Connection opened
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'ticker', 'symbol': 'BTCUSD'}
+DEBUG:btfxwss.client:_subscribe: {'event': 'subscribe', 'channel': 'book', 'symbol': 'BTCUSD'}
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('ticker', 'BTCUSD')
+INFO:btfxwss.queue_processor:Subscription succesful for channel ('book', 'BTCUSD')
+INFO:btfxwss.connection:Connection closed

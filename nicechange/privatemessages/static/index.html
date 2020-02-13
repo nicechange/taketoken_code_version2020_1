@@ -1,0 +1,371 @@
+{% load static %}
+{% load staticfiles %}
+{% load render_table from django_tables2 %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../static/css/reset.css" rel="stylesheet" media="screen">
+  <link href="../static/css/style.min.css" rel="stylesheet" media="screen">
+  <link href="../static/img/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="http://www.atlasestateagents.co.uk/css/tether.min.css">
+   <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+
+</head>
+
+<body class="page">
+<div class="page__line page__line--offer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-lg-4"></div>
+      <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+        <div class="logo"><img src="../static/img/logo__image.png" alt="" class="logo__img"></div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 text-center text-md-right">
+        <div class="lang-switch">
+          <div class="lang-switch__title">Choice language:</div>
+          <div class="lang-switch__items">
+            <a href="" class="lang-switch__lang lang-switch__lang--ru"></a>
+            <a href="" class="lang-switch__lang lang-switch__lang--en"></a>
+            <a href="" class="lang-switch__lang lang-switch__lang--de"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offer">
+      <h1 class="offer__title">КАПИТАЛИЗАЦИЯ КРИПТОРЫНКА НА 11.09.2017</h1>
+      <div class="offer__money-progress">
+        <img class="offer__money-progress-img" src="../static/img/offer__money-progress.png" alt="">
+        <div class="offer__money-progress-count">1 000 000 000</div>
+        <div class="offer__money-progress-currency">руб</div>
+      </div>
+      <div class="offer__subtitle">Старт биржи для безопасного обмена токенов 31.10.2017.<br>
+        Если Вы хотите быть первым среди брокеров<br>оставьте свой e-mail.</div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-6">
+        <form action="">
+            <div class="input-group input-group--wrapper">
+                <input type="text" class="form-control" placeholder="E-mail" {{ form.email}}
+              <button class="btn btn-primary">Подписаться</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page__line page__line--hollow">
+  <div class="container">
+    <div class="tabs">
+      <ul class="tabs__nav nav nav-tabs" id="myTab" role="tablist">
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1').hidden = false; document.getElementById('tab2').hidden = true;
+        document.getElementById('tab3').hidden = true;">
+          <a class="tabs__link nav-link active" data-toggle="tab" href="#tab1" role="tab"><img src="../static/img/bitcoin.png" alt=""></a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1').hidden = true; document.getElementById('tab2').hidden = false;
+        document.getElementById('tab3').hidden = true;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab2" role="tab"><img src="../static/img/etherium.png" alt=""></a>
+        </li>
+        <li class="tabs__item nav-item" onclick="document.getElementById('tab1').hidden = true; document.getElementById('tab2').hidden = true;
+        document.getElementById('tab3').hidden = false;">
+          <a class="tabs__link nav-link" data-toggle="tab" href="#tab3" role="tab"><img src="../static/img/litecoin.png" alt=""></a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tabs__content tab-content" id="nav-tabContent">
+        <div class="tabs__pane tab-pane fade show active" id="tab1" role="tabpanel" >
+          <div class="page__title">Курсы обменников:</div>
+          <table class="table">
+              {% render_table table_bit %}
+          </table>
+        </div>
+        <div class="tabs__pane tab-pane fade" id="tab2" role="tabpanel">
+          <div class="page__title">Курсы обменников:</div>
+          <table class="table">
+           {% render_table table_ether %}
+          </table>
+        </div>
+        <div class="tabs__pane tab-pane fade" id="tab3" role="tabpanel">
+          <div class="page__title">Курсы обменников:</div>
+          <table class="table">
+            {% render_table table_lite %}
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page__line page__line--white">
+  <div class="page__title">БЕЗОПАСНАЯ ПОКУПКА КРИПТОВАЛЮТЫ НА БИРЖЕ</div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <article class="article mt-5 mb-5 col-sm-12 col-xl-10 text-justify">
+        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации “Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст..” Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам “lorem ipsum” сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
+        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации “Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст..” Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам “lorem ipsum” сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
+      </article>
+    </div>
+  </div>
+</div>
+<div class="page__line page__line--white">
+  <div class="page__title">Не нашли курс который вас устраивает?<br>
+Создайте заявку и мы предложим вам лучший вариант!</div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-6">
+        <form action="">
+            <div class="input-group input-group--wrapper">
+              <input type="text" class="form-control" placeholder="E-mail" {{ form.email}}
+              <button class="btn btn-warning">Создать заявку</button>
+            </div>
+        </form>
+      </div>
+    </div>
+    <div class="text-center font-weight-bold mt-4">Перед сделкой убедитесь что у вас есть  кошелек. <a href="/questions/" class="text-warning">Завести кошелек</a></div>
+  </div>
+</div>
+<div class="page__line page__line--gray-lightest">
+  <div class="page__title page__title--decore">Что такое TakeToken?</div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-3">
+        <div class="step">
+          <div class="step__img">
+            <img src="../static/img/step-1.png" alt="">
+            <div class="step__img-errow d-none d-lg-block"><img src="../static/img/errow-right.png" alt=""></div>
+            <div class="step__img-errow step__img-errow--round d-none d-sm-block d-lg-none"><img src="../static/img/errow-round-left.png" alt=""></div>
+          </div>
+          <div class="step__title">Где купить<br>криптовалюту? </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-5">
+        <div class="step">
+          <div class="step__img">
+            <img src="../static/img/step-2.png" alt="">
+            <div class="step__img-errow d-none d-lg-block"><img src="../static/img/errow-right.png" alt=""></div>
+            <div class="step__img-errow step__img-errow--round d-none d-sm-block step__img-errow--reverce d-lg-none"><img src="../static/img/errow-round-right.png" alt=""></div>
+          </div>
+          <div class="step__title">Сторонние «обменники»,<br>невыгодный курс, без гарантий</div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-3">
+        <div class="step">
+          <div class="step__img">
+            <img src="../static/img/step-3.png" alt="">
+            <div class="step__img-errow step__img-errow--round d-none d-sm-block"><img src="../static/img/errow-round-left.png" alt=""></div>
+          </div>
+          <div class="step__title">Биржа <br>«CoinBrokers»</div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-3">
+        <div class="step">
+          <div class="step__img">
+            <img src="../static/img/step-6.png" alt="">
+            <div class="step__img-errow step__img-errow--round d-none d-sm-block step__img-errow--reverce"><img src="../static/img/errow-round-right.png" alt=""></div>
+          </div>
+          <div class="step__title">Где купить<br>криптовалюту? </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-5">
+        <div class="step">
+          <div class="step__img">
+            <img src="../static/img/step-5.png" alt="">
+            <div class="step__img-errow step__img-errow--reverce d-none d-lg-block"><img src="../static/img/errow-left.png" alt=""></div>
+            <div class="step__img-errow step__img-errow--round d-none d-sm-block d-lg-none"><img src="../static/img/errow-round-left.png" alt=""></div>
+          </div>
+          <div class="step__title">Сторонние «обменники»,<br>невыгодный курс, без гарантий</div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-3">
+        <div class="step">
+          <div class="step__img">
+            <img src="../static/img/step-4.png" alt="">
+            <div class="step__img-errow step__img-errow--reverce d-none d-lg-block"><img src="../static/img/errow-left.png" alt=""></div>
+            <div class="step__img-errow step__img-errow--round d-none d-sm-block step__img-errow--reverce d-lg-none"><img src="../static/img/errow-round-right.png" alt=""></div>
+          </div>
+          <div class="step__title">Биржа <br>«CoinBrokers»</div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-5">
+        <div class="step step--last">
+          <div class="step__img">
+            <img src="../static/img/step-7.png" alt="">
+          </div>
+          <div class="step__title">Теперь Вы<br>счастливый обладатель<br>криптовалют!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page__line page__line--white">
+  <div class="page__title page__title--decore mb-5">Почему TakeToken?</div>
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-sm-12 col-lg-4">
+        <h4 class="mb-4">Прямая покупка</h4>
+        <img src="../static/img/shield.png" alt="">
+        <div class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+      </div>
+      <div class="col-sm-12 col-lg-4">
+        <h4 class="mb-4">Анонимность</h4>
+        <img src="../static/img/mask.png" alt="">
+        <div class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+      </div>
+      <div class="col-sm-12 col-lg-4">
+        <h4 class="mb-4">Безопасная сделка</h4>
+        <img src="../static/img/purse.png" alt="">
+        <div class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page__line page__line--gray-lightest">
+  <div class="page__title page__title--decore mb-3">Отзывы</div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="comment">
+                  <div class="comment__left">
+                    <img class="comment__ava" src="../static/img/user.png">
+                  </div>
+                  <div class="comment__right">
+                    <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eligendi fugit, mollitia quisquam reiciendis repellat repudiandae. A dolorem esse molestiae natus perspiciatis ratione reiciendis! Amet animi quaerat quidem repellat saepe.</div>
+                    <div class="comment__name">Lorem ipsum</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="comment">
+                  <div class="comment__left">
+                    <img class="comment__ava" src="../static/img/user.png">
+                  </div>
+                  <div class="comment__right">
+                    <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eligendi fugit, mollitia quisquam reiciendis repellat repudiandae. A dolorem esse molestiae natus perspiciatis ratione reiciendis! Amet animi quaerat quidem repellat saepe.</div>
+                    <div class="comment__name">Lorem ipsum</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="comment">
+                  <div class="comment__left">
+                    <img class="comment__ava" src="../static/img/user.png">
+                  </div>
+                  <div class="comment__right">
+                    <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eligendi fugit, mollitia quisquam reiciendis repellat repudiandae. A dolorem esse molestiae natus perspiciatis ratione reiciendis! Amet animi quaerat quidem repellat saepe.</div>
+                    <div class="comment__name">Lorem ipsum</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="page__line page__line--offer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6"><p class="text-white text-center text-md-left">SuperChange © 2017. All rights reserved.</p></div>
+      <div class="col-sm-12 col-md-6 text-center text-md-right">
+        <div class="d-flex justify-content-center justify-content-lg-end mt-4 mt-md-0">
+          <div class="menu menu--white mr-5">
+            <div class="menu__item"><a href="#" class="menu__link">How it works</a></div>
+            <div class="menu__item"><a href="#" class="menu__link">FAQ</a></div>
+            <div class="menu__item"><a href="#" class="menu__link">Tools</a></div>
+            <div class="menu__item"><a href="#" class="menu__link">Affiliates</a></div>
+          </div>
+          <div class="menu menu--white">
+            <div class="menu__item"><a href="#" class="menu__link">How it works</a></div>
+            <div class="menu__item"><a href="#" class="menu__link">FAQ</a></div>
+            <div class="menu__item"><a href="#" class="menu__link">Tools</a></div>
+            <div class="menu__item"><a href="#" class="menu__link">Affiliates</a></div>
+          </div>
+        </div>
+        <div class="logo mt-5"><img src="../static/img/logo__image-two.png" alt="" class="logo__img"></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="chat" hidden="true">
+  <div class="chat__header">
+    <div class="chat__header--left"><input class="chat__input" type="text" placeholder="user e-mail"></div>
+    <div class="chat__header--right"><button class="btn btn-warning">Start deal!</button></div>
+    <div class="chat__close">×</div>
+  </div>
+  <div class="chat__body">
+    <div class="chat__messages">
+      <div class="chat__message">
+        <div class="chat__cloud">Как купить...</div>
+        <div class="chat__time">19:17</div>
+      </div>
+      <div class="chat__message flex-row-reverse">
+        <div class="chat__cloud chat__cloud--reverse chat__cloud--gray ">Как купить...</div>
+        <div class="chat__time">19:17</div>
+      </div>
+      <div class="chat__message">
+        <div class="chat__cloud">Как купить...</div>
+        <div class="chat__time">19:17</div>
+      </div>
+      <div class="chat__message flex-row-reverse">
+        <div class="chat__cloud chat__cloud--reverse chat__cloud--gray ">Как купить...</div>
+        <div class="chat__time">19:17</div>
+      </div>
+      <div class="chat__message">
+        <div class="chat__cloud">Как купить...</div>
+        <div class="chat__time">19:17</div>
+      </div>
+      <div class="chat__message flex-row-reverse">
+        <div class="chat__cloud chat__cloud--reverse chat__cloud--gray ">Как купить...</div>
+        <div class="chat__time">19:17</div>
+      </div>
+      <div class="chat__message">
+        <div class="chat__cloud">Как купить...</div>
+        <div class="chat__time">19:17</div>
+      </div>
+      <div class="chat__message flex-row-reverse">
+        <div class="chat__cloud chat__cloud--reverse chat__cloud--gray ">Как купить...</div>
+        <div class="chat__time">19:17</div>
+      </div>
+      <div class="chat__message">
+        <div class="chat__cloud">Как купить...</div>
+        <div class="chat__time">19:17</div>
+      </div>
+      <div class="chat__message flex-row-reverse">
+        <div class="chat__cloud chat__cloud--reverse chat__cloud--gray ">Как купить...</div>
+        <div class="chat__time">19:17</div>
+      </div>
+    </div>
+  </div>
+  <div class="chat__footer">
+    <div class="chat__footer--left"><textarea class="chat__textarea" name="" id="" placeholder="Впишите сюда свой вопрос."></textarea></div>
+    <div class="chat__footer--right"><button class="btn btn-warning btn-sm">Sand</button></div>
+  </div>
+</div>
+<script src="../static/js/script.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: btfxwss
+Version: 1.1.14
+Summary: Python 3.5+ Websocket Client for the Bitfinex WSS API.
+Home-page: https://github.com/nlsdfnbch/bitfinex_wss
+Author: Nils Diefenbach
+Author-email: 23okrs20+pypi@mykolab.com
+License: LICENCSE
+Description: UNKNOWN
+Platform: UNKNOWN

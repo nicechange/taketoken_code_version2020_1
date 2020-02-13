@@ -1,0 +1,55 @@
+{% load render_table from django_tables2 %}
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://www.atlasestateagents.co.uk/css/tether.min.css">
+<script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+  <link href="../static/css/reset.css" rel="stylesheet" media="screen">
+  <link href="../static/css/style.min.css" rel="stylesheet" media="screen">
+  <link href="../static/img/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+<script type="text/javascript" src="../static/js/jquery-latest.js"></script>
+<script type="text/javascript" src="../static/js/jquery.tablesorter.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<body>
+<h3>Welcome! Register to add and view orders and offers!</h3>
+<link rel="stylesheet" href="{% static 'django_tables2/themes/paleblue/css/screen.css' %}" />
+  <div class="container">
+
+          <table class="table">
+              {% render_table orders %}
+          </table>
+
+        </div>
+      </div>
+  </div>
+<br/><a href="/order/">Создать ордер</a>
+<br/><a href="/proffer/">Создать предложение (Брокер)</a>
+<br/><a href="/my/">Мои ордера</a>
+<br/><a href="/mybrok/">Мои ордера и предложения (Брокер)</a>
+<br/><a href="/login/">Войти</a>
+<br/><a href="/register/">Зарегистрироваться</a>
+ <script src="../static/js/script.min.js"></script>
+<script type='text/javascript'>
+(function(){ var widget_id = 'lRLplrjsH0';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+s.src = '//code.jivosite.com/script/widget/'+widget_id
+; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('оnload',l);}
+else{w.addEventListener('load',l,false);}}})();
+</script>
+<style>
+.sh_btn_char {
+height:11px!important;
+font-family:sans-serif!important;
+font-size:15px!important;
+}
+</style>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="69211ab7-2a0c-4528-9a45-0a95c8d015b9" name="taketoken.net" url="87.236.22.153">
+        <fileTransfer host="87.236.22.153" port="22" rootFolder="/home/coinuser/nicechange" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
